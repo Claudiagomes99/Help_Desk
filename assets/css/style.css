@@ -1,0 +1,212 @@
+/* Sistema de Chamados — tema lilás
+   Paleta:  lilás 50 #f8f5fe · 100 #efe8fd · 300 #cdbaf5 · 500 #9b78e6 · 600 #7c54cf · 700 #6540b5 · 900 #33205e */
+
+:root {
+    --lilas-50:  #f8f5fe;
+    --lilas-100: #efe8fd;
+    --lilas-300: #cdbaf5;
+    --lilas-500: #9b78e6;
+    --lilas-600: #7c54cf;
+    --lilas-700: #6540b5;
+    --lilas-900: #33205e;
+
+    /* Faz o Bootstrap enxergar o lilás como a cor "primary" */
+    --bs-primary: #7c54cf;
+    --bs-primary-rgb: 124, 84, 207;
+    --bs-primary-text-emphasis: #4a2f8c;
+    --bs-primary-bg-subtle: #ece4fc;
+    --bs-primary-border-subtle: #d3c2f6;
+    --bs-link-color: #6540b5;
+    --bs-link-color-rgb: 101, 64, 181;
+    --bs-link-hover-color: #4a2f8c;
+    --bs-link-hover-color-rgb: 74, 47, 140;
+
+    --bs-body-font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --bs-body-color: #2d2640;
+    --bs-secondary-color: #7a7290;
+    --bs-border-radius: 0.65rem;
+}
+
+/* Tamanho geral: tudo no Bootstrap é em rem, então mexer aqui aumenta o site inteiro */
+html {
+    font-size: 112.5%; /* 18px */
+}
+
+body {
+    background-color: var(--lilas-50);
+    line-height: 1.6;
+}
+
+/* Páginas mais largas, aproveitando melhor a tela */
+.container {
+    max-width: 1440px;
+}
+
+h3, h4, h6 {
+    font-weight: 800;
+    color: var(--lilas-900);
+}
+
+h6 {
+    font-weight: 700;
+}
+
+/* ---------- Menu ---------- */
+.navbar-lilas {
+    background: linear-gradient(100deg, #5b3aa8 0%, #8a63d8 100%);
+    box-shadow: 0 4px 18px rgba(91, 58, 168, 0.25);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.navbar-lilas .nav-link {
+    border-radius: 999px;
+    padding-inline: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-lilas .nav-link:hover,
+.navbar-lilas .nav-link.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* ---------- Botões ---------- */
+.btn {
+    font-weight: 600;
+}
+
+.btn-primary {
+    --bs-btn-bg: #7c54cf;
+    --bs-btn-border-color: #7c54cf;
+    --bs-btn-hover-bg: #6a43bb;
+    --bs-btn-hover-border-color: #6a43bb;
+    --bs-btn-active-bg: #5b3aa8;
+    --bs-btn-active-border-color: #5b3aa8;
+    --bs-btn-disabled-bg: #a58ae0;
+    --bs-btn-disabled-border-color: #a58ae0;
+    --bs-btn-focus-shadow-rgb: 124, 84, 207;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #6540b5;
+    --bs-btn-border-color: #b7a0ee;
+    --bs-btn-hover-bg: #7c54cf;
+    --bs-btn-hover-border-color: #7c54cf;
+    --bs-btn-active-bg: #6a43bb;
+    --bs-btn-active-border-color: #6a43bb;
+    --bs-btn-focus-shadow-rgb: 124, 84, 207;
+}
+
+/* ---------- Formulários ---------- */
+.form-label {
+    font-weight: 600;
+    color: var(--lilas-900);
+}
+
+.form-control,
+.form-select {
+    border-color: #ddd3f3;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--lilas-500);
+    box-shadow: 0 0 0 0.25rem rgba(124, 84, 207, 0.18);
+}
+
+/* ---------- Cartões e tabela ---------- */
+.card {
+    border: 1px solid #ebe3fa;
+    border-radius: 1rem;
+    box-shadow: 0 6px 24px rgba(91, 58, 168, 0.07) !important;
+}
+
+.card-footer {
+    background-color: var(--lilas-50);
+    border-top-color: #ebe3fa;
+    padding: 1.1rem 1.75rem;
+}
+
+.table {
+    --bs-table-hover-bg: var(--lilas-50);
+    --bs-table-bg: transparent;
+}
+
+.table thead th {
+    background-color: var(--lilas-100);
+    color: var(--lilas-700);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-bottom: 0;
+    padding: 0.85rem 1rem;
+}
+
+.table td {
+    padding: 1rem 1.1rem;
+    border-color: #f1ebfc;
+}
+
+.badge {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.45em 0.8em;
+}
+
+/* Textos digitados pelas pessoas: respeita quebras de linha */
+.texto-livre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+/* ---------- Login e cadastro ---------- */
+.pagina-auth {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:
+        radial-gradient(circle at 15% 10%, #e3d6fb 0%, transparent 45%),
+        radial-gradient(circle at 90% 90%, #d6c2f8 0%, transparent 40%),
+        var(--lilas-50);
+}
+
+.pagina-auth > .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-auth {
+    border: 0;
+    border-radius: 1.5rem;
+    box-shadow: 0 18px 50px rgba(91, 58, 168, 0.18) !important;
+}
+
+.auth-icone {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1.25rem;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #fff;
+    background: linear-gradient(135deg, #7c54cf, #a98af0);
+    box-shadow: 0 8px 20px rgba(124, 84, 207, 0.35);
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+    color: #9a91b3;
+}
+
+@media (max-width: 575.98px) {
+    .filtros .form-select {
+        width: 100%;
+    }
+}
