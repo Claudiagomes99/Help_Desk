@@ -42,6 +42,14 @@ sistema_chamados/
 | atendente | Tudo do cliente + ver todos os chamados, alterar status/urgência e encerrar |
 | admin     | Mesmas permissões do atendente                                         |
 
+## Capturas:
+<img width="1917" height="627" alt="image" src="https://github.com/user-attachments/assets/50a8ed1e-a621-4c35-af35-ebdc6f4504d9" />
+<img width="1917" height="452" alt="image" src="https://github.com/user-attachments/assets/ea463f41-efeb-48f5-ade6-57e20d35a1a1" />
+<img width="1917" height="597" alt="image" src="https://github.com/user-attachments/assets/337a1957-9df3-4737-8aa0-c70393964962" />
+<img width="678" height="733" alt="image" src="https://github.com/user-attachments/assets/ccb97d04-0f90-4f70-a145-f3037ac2cd36" />
+<img width="682" height="578" alt="image" src="https://github.com/user-attachments/assets/5c3d5890-3a8c-43b8-b502-b5b9fcd25b11" />
+
+
 
 ##
 LinkVideo:https://youtu.be/h-hl-yZxd4U
